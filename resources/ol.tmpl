@@ -1,0 +1,4 @@
+#BSUB -J <%= job.name %>
+#BSUB -q interactive  # Job queue
+R CMD BATCH "<%= rscript %>"
+

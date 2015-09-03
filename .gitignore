@@ -1,0 +1,11 @@
+.vagrant/*
+resources/rstudio-server-0.98.1103-x86_64.rpm
+resources/openmpi-1.8.8.tar.gz
+resources/Rmpi
+resources/BatchJobs.git
+resources/openlava.git
+resources/Bioc*
+resources/rstudio-user-env
+share/*
+.Rproj.user
+
