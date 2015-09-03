@@ -3,14 +3,14 @@ source "/vagrant/scripts/common.sh"
 
 function installOpenMPI {
 	echo "setting up OpenMPI"
-	FILE=/vagrant/resources/$OPENMPI_ARCHIVE
-	if resourceExists $OPENMPI_ARCHIVE; then
-		echo "install OpenMPI from local file"
-	else
-		curl -o $FILE -O -L $OPEMMPI_MIRROR_DOWNLOAD
-	fi
-	tar -xzf /vagrant/resources/openmpi-1.8.8.tar.gz -C /usr/local
-    ln -s /usr/local/openmpi-1.8.8 /usr/local/openmpi
+	# FILE=/vagrant/resources/$OPENMPI_ARCHIVE
+	# if resourceExists $OPENMPI_ARCHIVE; then
+	#	echo "install OpenMPI from local file"
+	# else
+	#	curl -o $FILE -O -L $OPEMMPI_MIRROR_DOWNLOAD
+	# fi
+	tar -xzf /vagrant/resources/openmpi-1.8.4.tgz -C /usr/local
+    ln -s /usr/local/openmpi-1.8.4 /usr/local/openmpi
 	#tar -xzf $FILE -C /usr/local
 	#ln -s /usr/local/openmpi-1.8.8 /usr/local/openmpi
 	#cd /usr/local/openmpi

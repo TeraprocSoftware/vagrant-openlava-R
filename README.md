@@ -78,6 +78,8 @@ or
 make -f ./makeR/Makefile install
 ```
 
+In order to debug effectively in your package, you’ll also want to ensure that your package is compiled with the --with-keep.source option. Refer to https://support.rstudio.com/hc/en-us/articles/205612627-Debugging-with-RStudio#code-window for details. 
+
 ## Test OpenLava/RBatch
 
 OpenLava/RBatch integration is using R packages of BatchJobs and BiocParallel. Refer to https://github.com/tudo-r/BatchJobs/wiki/Configuration for details of configuration of BatchJobs.
