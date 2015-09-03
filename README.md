@@ -1,9 +1,9 @@
-vagrant-Openlava-R on centos 6.5
+vagrant-Openlava-R on Ubuntu-14.04
 ================================
 
 # Introduction
 
-Vagrant project to spin up a cluster of 6 virtual machines with OpenLava v2.2, OpenMPI v1.8.4, Docker v1.3, RStudio v0.98 and latest R environment (BatchJobs, BiocParallel and RMPI packages).
+Vagrant project to spin up a cluster of 6 virtual machines with OpenLava v3.0, OpenMPI v1.8.8, Docker v1.7.1, RStudio v0.98 and latest R environment (BatchJobs, BiocParallel and RMPI packages).
 
 1. olnode1 : Openlava master, RStudio server, R, OpenMPI
 2. olnode2 : Openlava slave with R, OpenMPI
@@ -19,7 +19,7 @@ TODO: OpenLava+Docker+R
 
 1. [Download and install VirtualBox](https://www.virtualbox.org/wiki/Downloads)
 2. [Download and install Vagrant](http://www.vagrantup.com/downloads.html).
-3. Run ```vagrant box add centos65 https://github.com/2creatives/vagrant-centos/releases/download/v6.5.3/centos65-x86_64-20140116.box```
+3. Run ```vagrant box add ubuntu https://oss-binaries.phusionpassenger.com/vagrant/boxes/latest/ubuntu-14.04-amd64-vbox.box```
 4. Git clone this project, and change directory (cd) into this project (directory).
 5. Run ```vagrant up``` to create the VM.
 6. Run ```vagrant ssh``` to get into your VM. The VM name in vagrant is olnode1, olnode2 ... olnoden. While the ip of VMs depends on the scale of your OpenLava cluster. If it is less then 10, the IP will be 10.211.59.101, .... 10.211.59.10n. Or you could run ```ssh``` directly with ip of VMs and username/password of root/vagrant.
