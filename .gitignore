@@ -1,5 +1,6 @@
 .vagrant/*
 resources/rstudio-server-0.98.1103-x86_64.rpm
+resources/rstudio-server-0.98.1103-amd64.deb
 resources/openmpi-1.8.8.tar.gz
 resources/Rmpi
 resources/BatchJobs.git
