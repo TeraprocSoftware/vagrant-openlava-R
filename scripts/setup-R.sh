@@ -56,7 +56,7 @@ EOF
 
     # Hack BatchJobs to support RMPI on OL before BatchJobs has new package on web
     mv /usr/local/lib/R/site-library/BatchJobs /usr/local/lib/R/site-library/orig.BatchJobs
-    tar -xzf /vagrant/resources/./BatchJobs_20150903.tar.gz -C /usr/local/lib/R/site-library/
+    tar -xzf /vagrant/resources/BatchJobs_20150903.tar.gz -C /usr/local/lib/R/site-library/
     chown -Rf root:root /usr/local/lib/R/site-library/BatchJobs
 	
 	# set up R profile

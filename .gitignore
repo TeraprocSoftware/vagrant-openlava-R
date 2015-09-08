@@ -8,5 +8,6 @@ resources/openlava.git
 resources/Bioc*
 resources/rstudio-user-env
 share/*
+share2/*
 .Rproj.user
 
