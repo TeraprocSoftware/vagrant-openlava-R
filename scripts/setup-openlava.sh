@@ -36,6 +36,13 @@ function installOpenlava {
 		sed -i "s/MASTER_HOSTNAME/olnode1/" /opt/openlava/etc/lsf.cluster.openlava 
 		sed -i "s/MASTER_HOSTNAME/olonde1/" /opt/openlava/etc/lsb.hosts
 		/opt/openlava/etc/openlava restart
+		# install cacti http://www.unixmen.com/install-cacti-ubuntu-14-04/
+		# cacti is installed in /usr/share/cacti/site/ and accessed by http://10.211.59.101/cacti/
+		apt-get update
+		apt-get -y install apache2 mysql-server php5 libapache2-mod-php5
+		apt-get -y install rrdtool
+		apt-get -y install snmp snmpd
+		apt-get -y install cacti cacti-spine
     fi
 
 	# compute host
