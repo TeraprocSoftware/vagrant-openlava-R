@@ -12,7 +12,7 @@ function installOpenMPI {
 	tar -xzf /vagrant/resources/openmpi-1.8.4.tgz -C /usr/local
     ln -s /usr/local/openmpi-1.8.4 /usr/local/openmpi
 	#tar -xzf $FILE -C /usr/local
-	#ln -s /usr/local/openmpi-1.8.8 /usr/local/openmpi
+	#ln -s /usr/local/openmpi-1.10.2 /usr/local/openmpi
 	#cd /usr/local/openmpi
 	#./configure --prefix=/usr/local/openmpi
 	#make all

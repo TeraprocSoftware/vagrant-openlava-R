@@ -12,11 +12,11 @@ RES_SSH_COPYID_ORIGINAL=$SSH_RES_DIR/ssh-copy-id.original
 RES_SSH_COPYID_MODIFIED=$SSH_RES_DIR/ssh-copy-id.modified
 RES_SSH_CONFIG=$SSH_RES_DIR/config
 #RStudio
-RSTUDIO_ARCHIVE=rstudio-server-0.98.1103-amd64.deb
+RSTUDIO_ARCHIVE=rstudio-server-0.91.10-amd64.deb
 RSTUDIO_MIRROR_DOWNLOAD=http://download2.rstudio.org/$RSTUDIO_ARCHIVE
 #OpenMPI
-OPENMPI_ARCHIVE=openmpi-1.8.8.tar.gz
-OPEMMPI_MIRROR_DOWNLOAD=http://www.open-mpi.org/software/ompi/v1.8/downloads/$OPENMPI_ARCHIVE
+OPENMPI_ARCHIVE=oopenmpi-1.10.2.tar.gz
+OPEMMPI_MIRROR_DOWNLOAD=https://www.open-mpi.org/software/ompi/v1.10/downloads/$OPENMPI_ARCHIVE
 
 function resourceExists {
 	FILE=/vagrant/resources/$1

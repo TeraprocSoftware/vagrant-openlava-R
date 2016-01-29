@@ -17,7 +17,7 @@ function installUtilities {
 	apt-key adv --keyserver keyserver.ubuntu.com --recv-keys E084DAB9
 	apt-get update -y
 	apt-get install -y curl zip r-base r-base-dev
-	curl -sSL https://get.docker.com/ubuntu/ | sh
+	curl -sSL https://get.docker.com/ | sh
 }
 echo "setup ubuntu"
 
