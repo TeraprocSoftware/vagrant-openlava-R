@@ -17,6 +17,9 @@ RSTUDIO_MIRROR_DOWNLOAD=http://download2.rstudio.org/$RSTUDIO_ARCHIVE
 #OpenMPI
 OPENMPI_ARCHIVE=oopenmpi-1.10.2.tar.gz
 OPEMMPI_MIRROR_DOWNLOAD=https://www.open-mpi.org/software/ompi/v1.10/downloads/$OPENMPI_ARCHIVE
+#go
+GO_ARCHIVE=go1.5.3.linux-amd64.tar.gz
+GO_MIRROR_DOWNLOAD=https://storage.googleapis.com/golang/$GO_ARCHIVE
 
 function resourceExists {
 	FILE=/vagrant/resources/$1

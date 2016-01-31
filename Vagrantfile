@@ -28,6 +28,7 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
 				s.args = "-t #{numNodes}"
 			end
 			# node.vm.provision "shell", path: "scripts/setup-java.sh"
+            node.vm.provision "shell", path: "scripts/setup-go.sh"
 			node.vm.provision "shell", path: "scripts/setup-openmpi.sh"
 			node.vm.provision "shell", path: "scripts/setup-R.sh"
 			node.vm.provision "shell", path: "scripts/setup-openlava.sh"
