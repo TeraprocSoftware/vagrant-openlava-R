@@ -8,7 +8,7 @@ function setupGo {
     mkdir -p /usr/local/gowork/pkg
     mkdir -p /usr/local/gowork/bin
 	
-    echo export GOROOT=/usr/local/go >> /etc/profile.d/go.sh
+    echo export GOROOT=/usr/local/go > /etc/profile.d/go.sh
     echo export GOPATH=/usr/local/gowork >> /etc/profile.d/go.sh
 	echo export PATH=\${GOROOT}/bin:\${GOPATH}/bin:\${PATH} >> /etc/profile.d/go.sh
     echo export LD_LIBRARY_PATH=/usr/local/lib:\${LD_LIBRARY_PATH} >> /etc/profile.d/go.sh

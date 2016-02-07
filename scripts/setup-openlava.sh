@@ -69,6 +69,8 @@ function installOpenlava {
 	mkdir /home/openlava/
 	chown -R openlava:openlava /home/openlava/
 	sed -i 's@^openlava.*@openlava:$6$QyrSBgRo$6uPmKg7nSleT3akUMWGl2kF0A3IMU2GAJUjN8E.pSkWRBjEjrOF122IsyPhrFPJWf.qssuYrJGHAxOG/TGNe5/:16483::::::@g' /etc/shadow
+    
+    echo export LD_LIBRARY_PATH=/opt/openlava/lib:\${LD_LIBRARY_PATH} >> /etc/profile.d/openlava.sh
 }
 
 echo "setup openlava"
