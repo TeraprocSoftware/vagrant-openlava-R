@@ -7,6 +7,8 @@ resources/BatchJobs.git
 resources/openlava.git
 resources/Bioc*
 resources/rstudio-user-env
+resources/*.gz
+resources/*.deb
 share/*
 share2/*
 .Rproj.user

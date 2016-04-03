@@ -34,6 +34,7 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
 			node.vm.provision "shell", path: "scripts/setup-openlava.sh"
 			if i == 1
 				node.vm.provision "shell", path: "scripts/setup-RStudio.sh"
+                node.vm.provision "shell", path: "scripts/setup-mesos.sh"
 			end
 		end
 	end

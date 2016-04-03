@@ -17,6 +17,11 @@ function installUtilities {
 	apt-key adv --keyserver keyserver.ubuntu.com --recv-keys E084DAB9
 	apt-get update -y
 	apt-get install -y curl zip r-base r-base-dev
+    apt-get install -y tar wget git
+    apt-get install -y autoconf libtool
+    /* mesos dependence */
+    apt-get -y install build-essential python-dev python-boto libcurl4-nss-dev libsasl2-dev libsasl2-modules maven libapr1-dev libsvn-dev
+   
 	curl -sSL https://get.docker.com/ | sh
 }
 echo "setup ubuntu"

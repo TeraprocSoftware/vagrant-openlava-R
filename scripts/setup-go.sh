@@ -31,6 +31,10 @@ function setupGo {
     /* https://github.com/golang/protobuf */
     go get -u -v github.com/golang/protobuf/{proto,protoc-gen-go}
     go get -u -v github.com/minaandrawos/Go-Protobuf-Examples
+    
+    /* https://github.com/mesosphere/marathon/tree/releases/1.0 */
+    /* https://gist.github.com/massenz/e1d88ab715a5fbf174d9 */
+    /* http://www.scala-sbt.org/release/docs/zh-cn/Installing-sbt-on-Linux.html */
 }
 
 function installGo {
